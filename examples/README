@@ -1,0 +1,12 @@
+# 📚 Examples - Data Cleaner Pro
+
+This directory contains practical examples demonstrating how to use Data Cleaner Pro for real-world data cleaning tasks.
+
+## 🚀 Quick Start
+
+Run any example:
+```bash
+python 01_ecommerce_customers.py
+python 02_sales_data_analysis.py
+python 03_customer_churn_prediction.py
+python 04_time_series_cleaning.py
