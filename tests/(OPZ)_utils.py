@@ -7,10 +7,10 @@ from pathlib import Path
 from src.utils import DataLoader, ConfigManager, Logger
 
 class TestDataLoader:
-    """Test per DataLoader"""
+    """Test for DataLoader"""
     
     def test_load_csv(self, tmp_path):
-        """Test caricamento CSV"""
+        """Test Load CSV"""
         # Crea file CSV temporaneo
         csv_file = tmp_path / "test.csv"
         csv_file.write_text("col1,col2\n1,2\n3,4")
@@ -22,7 +22,7 @@ class TestDataLoader:
         assert list(df.columns) == ['col1', 'col2']
     
     def test_save_parquet(self, tmp_path):
-        """Test salvataggio Parquet"""
+        """Test save Parquet"""
         df = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
         
         loader = DataLoader()
@@ -57,7 +57,7 @@ class TestConfigManager:
         assert 'port' in db_config
 
 class TestLogger:
-    """Test per Logger"""
+    """Test Logger"""
     
     def test_logger_creation(self, tmp_path):
         """Test creazione logger"""
@@ -73,7 +73,7 @@ class TestLogger:
         assert "Test message" in log_file.read_text()
 
 class TestDataQualityUtils:
-    """Test utility qualità dati"""
+    """Test utility quality dates"""
     
     def test_calculate_data_quality_metrics(self):
         """Test metriche qualità dati"""
