@@ -3,8 +3,7 @@ Data Cleaner Pro - Professional data cleaning toolkit
 """
 
 __version__ = '0.1.0'
-__author__ = 'Your Name'
-__email__ = 'your.email@example.com'
+__author__ = 'nutmegdev96'
 __license__ = 'MIT'
 __description__ = 'Professional data cleaning toolkit for everyday use'
 
